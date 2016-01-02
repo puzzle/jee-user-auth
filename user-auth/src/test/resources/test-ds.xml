@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://www.ironjacamar.org/doc/schema/datasources_1_1.xsd">
+
+    <datasource jndi-name="java:jboss/datasources/userauth-test"
+                pool-name="userauth-test"
+                enabled="true"
+                use-java-context="true">
+        <connection-url>jdbc:h2:mem:userauth-test;DB_CLOSE_DELAY=-1</connection-url>
+        <security>
+            <user-name>sa</user-name>
+            <password>sa</password>
+        </security>
+    </datasource>
+</datasources>
+ 
